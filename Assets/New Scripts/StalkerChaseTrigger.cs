@@ -42,7 +42,7 @@ public class StalkerChaseTrigger : MonoBehaviour
     public string[] policeSubtitles;  // Define police subtitles
     public string[] friend1Subtitles; // Define Friend1 subtitles
     public string[] friend2Subtitles; // Define Friend2 subtitles
-
+    bool fastenHeartBeat = false;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -65,6 +65,7 @@ public class StalkerChaseTrigger : MonoBehaviour
 
             FindAnyObjectByType<ArduinoController>().SendSerialMessage("ringC"); // Ring the phone
             StartCoroutine(WaitForPlayerPickUp());
+            SoundManager.instance.PlaySound(SoundManager.instance.Glitch);
         }
     }
 
@@ -72,6 +73,14 @@ public class StalkerChaseTrigger : MonoBehaviour
     {
         if (isStalkerChasing)
         {
+            if (!fastenHeartBeat)
+            {
+                SoundManager.instance.PlaySound(SoundManager.instance.WomanBreating);
+                SoundManager.instance.audioSource.loop = true;
+                SoundManager.instance.audioSource.volume = 0.5f;
+
+                fastenHeartBeat=true;
+            }
             // 3. Make the stalker chase the player
             Vector3 direction = player.position - stalker.transform.position;
             stalker.transform.position += direction.normalized * stalkerSpeed * Time.deltaTime;

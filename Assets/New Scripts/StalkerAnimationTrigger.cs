@@ -12,6 +12,7 @@ public class StalkerAnimationTrigger : MonoBehaviour
         {
             stalkerAnimator.SetTrigger("TurnAndWalk");  // Trigger the stalker animation
             animationPlayed = true;                    // Prevent retriggering
+            SoundManager.instance.PlaySound(SoundManager.instance.Glitch);
         }
     }
 }
