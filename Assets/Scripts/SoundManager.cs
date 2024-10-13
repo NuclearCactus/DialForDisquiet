@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEditor.Build.Content;
 
 public class SoundManager : MonoBehaviour
 {
@@ -7,8 +9,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource audioSource;               // AudioSource for sound effects
     public AudioSource BGaudioSource;             
 
-    public AudioClip AmbientHospitalNoise;
+    public AudioClip BG;
     public AudioClip WomanWalking;
+    public AudioClip crowd, ManWalkingSound, NightRoadAmbience, WomanBreating, AmbientHospital, Glitch, DoorOpen, DoorClose;
 
 
     void Awake()
@@ -16,14 +19,15 @@ public class SoundManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
+
         }
         else if (instance != this)
         {
             Destroy(gameObject);
         }
         audioSource = gameObject.AddComponent<AudioSource>();    // For sound effects
-        PlayBackgroundMusic(AmbientHospitalNoise);
+        PlayBackgroundMusic();
     }
     public void PlaySound(AudioClip clip)
     {
@@ -57,12 +61,14 @@ public class SoundManager : MonoBehaviour
         {
             return audioSource.isPlaying;
         }
-        public void PlayBackgroundMusic(AudioClip musicClip)
+        public void PlayBackgroundMusic()
         {
         if (BGaudioSource.isPlaying)
         {
-            BGaudioSource.clip = AmbientHospitalNoise;
+            BGaudioSource.clip = BG;
             BGaudioSource.Play();
         }
         }
+
+
     }

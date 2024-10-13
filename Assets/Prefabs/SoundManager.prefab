@@ -80,8 +80,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   BGaudioSource: {fileID: 2984958667258235467}
-  AmbientHospitalNoise: {fileID: 8300000, guid: 311a013c346c3ce4aa8dcee14de98608, type: 3}
-  WomanWalking: {fileID: 8300000, guid: 3499ede6483e4a048855b4265726c201, type: 3}
+  BG: {fileID: 0}
+  WomanWalking: {fileID: 8300000, guid: 93b4aaf7b833d7841b3184c91e118d1b, type: 3}
+  crowd: {fileID: 8300000, guid: 118ee18414fa4ac4cbaf6ebcec418713, type: 3}
+  ManWalkingSound: {fileID: 8300000, guid: adceaa8ba671c7d46ab4129fb26d0b28, type: 3}
+  NightRoadAmbience: {fileID: 8300000, guid: 479269bf089c15441a439ce6add7f077, type: 3}
+  WomanBreating: {fileID: 8300000, guid: bc25ac82c40c1d34ba56d67663ebee66, type: 3}
+  AmbientHospital: {fileID: 8300000, guid: f0a4173576a8da8439861ffa461a9725, type: 3}
+  Glitch: {fileID: 8300000, guid: 1eabe594dd0492a45aeea06ce2319203, type: 3}
+  DoorOpen: {fileID: 8300000, guid: 0804ecf103a451d4886c5b14fb6b5f4f, type: 3}
+  DoorClose: {fileID: 8300000, guid: 253e248dab51e2c40b71b14941c3833b, type: 3}
 --- !u!82 &1441511479001796385
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94,7 +102,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.653
   m_Pitch: 1
   Loop: 0

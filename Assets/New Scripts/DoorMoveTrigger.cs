@@ -21,6 +21,7 @@ public class DoorMoveTrigger : MonoBehaviour
             {
                 // Trigger the animation based on the provided trigger name
                 doorAnimator.SetTrigger(doorAnimationTrigger);
+                SoundManager.instance.PlaySound(SoundManager.instance.DoorOpen);
             }
         }
     }

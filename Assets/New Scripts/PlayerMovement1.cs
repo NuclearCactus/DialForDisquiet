@@ -58,9 +58,9 @@ public class PlayerMovement1 : MonoBehaviour
     void HandleMovement()
     {
         // Move the player
-        if (!SoundManager.instance.IsPlaying())
+        if (SoundManager.instance!=null && !SoundManager.instance.IsPlaying())
         {
-            SoundManager.instance.PlaySound(SoundManager.instance.WomanWalking);
+            SoundManager.instance?.PlaySound(SoundManager.instance.WomanWalking);
         }
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
@@ -115,7 +115,7 @@ public class PlayerMovement1 : MonoBehaviour
     void SetIdleSprite()
     {
         // Set idle sprite based on facing direction
-        SoundManager.instance.StopSound();
+        SoundManager.instance?.StopSound();
 
         switch (facingDirection)
         {

@@ -118,6 +118,90 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &37706231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37706232}
+  - component: {fileID: 37706233}
+  m_Layer: 0
+  m_Name: Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37706232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37706231}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 260117946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &37706233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37706231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.601
+  m_Color: {r: 0.68778926, g: 0.9056604, b: 0.86604744, a: 1}
+  m_Intensity: 1.21
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.504
+  m_ShadowSoftness: 0.681
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.23
+  m_PointLightOuterRadius: 11.42
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &181879084
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,13 +297,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2469654452022902722, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+      propertyPath: BG
+      value: 
+      objectReference: {fileID: 8300000, guid: 053684d393490714ab3da0d14571cc15, type: 3}
+    - target: {fileID: 2469654452022902722, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 245264713}
     - target: {fileID: 2984958667258235467, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
-      propertyPath: m_Volume
+      propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2984958667258235467, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+      propertyPath: m_Volume
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984958667258235467, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 053684d393490714ab3da0d14571cc15, type: 3}
+    - target: {fileID: 2984958667258235467, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 053684d393490714ab3da0d14571cc15, type: 3}
+    - target: {fileID: 2984958667258235467, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7869678832976002735, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
       propertyPath: m_Name
@@ -270,6 +374,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+--- !u!82 &245264713 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1441511479001796385, guid: cc0bb72898b02384eb33bbd82c08fb02, type: 3}
+  m_PrefabInstance: {fileID: 245264712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &260117945
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +411,8 @@ Transform:
   m_LocalPosition: {x: 0.05, y: -12.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 37706232}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &260117947
@@ -384,10 +494,10 @@ MonoBehaviour:
   moveSpeed: 5
   canMove: 1
   spriteRenderer: {fileID: 260117950}
-  frontIdle: {fileID: 3658733205694395365, guid: 73d5ce05effec214da6eac3de22e4a7e, type: 3}
-  frontWalk1: {fileID: 3658733205694395365, guid: 73d5ce05effec214da6eac3de22e4a7e, type: 3}
-  frontWalk2: {fileID: 3658733205694395365, guid: 73d5ce05effec214da6eac3de22e4a7e, type: 3}
-  backIdle: {fileID: -4260253242146518891, guid: cbe111052cae38f4cae97d05c40b4db7, type: 3}
+  frontIdle: {fileID: 21300000, guid: 0e00516a879c5d1408edffad8847476e, type: 3}
+  frontWalk1: {fileID: 21300000, guid: 4fd56e2f45779734e9a61f6b919ef2f6, type: 3}
+  frontWalk2: {fileID: 21300000, guid: 54bf8e53cc18af8429699d16e24c6153, type: 3}
+  backIdle: {fileID: 21300000, guid: cbe111052cae38f4cae97d05c40b4db7, type: 3}
   backWalk1: {fileID: 2813289629400387279, guid: 99f581f76b813b8429038941eacbd05f, type: 3}
   backWalk2: {fileID: 4821740162891327826, guid: a1e1f813020d3e540b909ca40d462478, type: 3}
   leftIdle: {fileID: -5710606562795841872, guid: 6a03ce33197b7c648b1b872c9423f777, type: 3}
@@ -448,7 +558,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &535669246
@@ -749,7 +859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &758013687
 MonoBehaviour:
   m_ObjectHideFlags: 0

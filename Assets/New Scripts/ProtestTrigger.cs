@@ -19,9 +19,17 @@ public class ProtestTrigger : MonoBehaviour
         if (other.CompareTag("Player")) // Assuming the player has the tag "Player"
         {
             StartCoroutine(FadeAndReplace());
+            StartCoroutine(SoundFade());
         }
     }
-
+    IEnumerator SoundFade()
+    {
+            while (SoundManager.instance.audioSource.volume > 0.01f)
+            {
+                SoundManager.instance.audioSource.volume -= Time.deltaTime / fadeDuration;
+            }
+                yield return null;
+    }
     private IEnumerator FadeAndReplace()
     {
         // Disable player movement during the fade

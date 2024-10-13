@@ -11,12 +11,14 @@ public class FadeSound : MonoBehaviour
     {
         playerPosition = player.transform.position;
         TotalDistance = Vector3.Distance(playerPosition, Trigger.transform.position);
-       
+        print(TotalDistance);
+
     }
     private void Update()
     {
-        //distanceToTarget = Vector3.Distance(player.transform.position, Trigger.transform.position);
-        //if (SoundManager.instance.BGaudioSource.volume>=0) SoundManager.instance.BGaudioSource.volume = 1 - distanceToTarget/TotalDistance;
+        distanceToTarget = Vector3.Distance(player.transform.position, Trigger.transform.position);
+        print(distanceToTarget);
+        if (SoundManager.instance.BGaudioSource.volume>=0) SoundManager.instance.BGaudioSource.volume = distanceToTarget/TotalDistance;
 
     }
 }

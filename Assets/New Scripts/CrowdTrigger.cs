@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CrowdTrigger : MonoBehaviour
@@ -15,6 +16,9 @@ public class CrowdTrigger : MonoBehaviour
             // Hide the phoneBook UI when the player reaches the crowd trigger
             phoneBookUI.SetActive(false);
             Debug.Log("CrowdTrigger activated: Stalker stopped, phonebook hidden.");
+            SoundManager.instance.PlaySound(SoundManager.instance.crowd);
+
         }
     }
+  
 }
