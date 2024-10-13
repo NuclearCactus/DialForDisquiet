@@ -5,12 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainGame.unity
+  - enabled: 0
+    path: Assets/Scenes/Blah2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/HospitalScene.unity
+  - enabled: 0
+    path: Assets/Scenes/Blah.unity
     guid: f781d80990db4df4ea5be26e23d79c60
+  - enabled: 1
+    path: Assets/Scenes/InitialScene.unity
+    guid: 2295767598e3081488378b8bf7731ea6
+  - enabled: 1
+    path: Assets/Scenes/CorridorScene.unity
+    guid: b74367d054af7054abe9c2ac14c3d118
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: c3df4974ad109ee41b8daa190bf726c0
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: d2c0663d32261904da2a170a26f38f8f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
