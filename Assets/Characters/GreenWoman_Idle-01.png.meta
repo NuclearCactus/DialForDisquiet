@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreenWoman_Idle-01_0: 3158188443058416616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

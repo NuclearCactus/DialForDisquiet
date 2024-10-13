@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BaldMan_Walk-1-01_0: -7890010639615081508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

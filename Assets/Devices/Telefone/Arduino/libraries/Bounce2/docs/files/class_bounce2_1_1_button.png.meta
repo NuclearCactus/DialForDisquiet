@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      class_bounce2_1_1_button_0: -7176127131913699293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

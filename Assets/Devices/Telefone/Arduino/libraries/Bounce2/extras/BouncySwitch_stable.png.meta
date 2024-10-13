@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BouncySwitch_stable_0: 989737795905590891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

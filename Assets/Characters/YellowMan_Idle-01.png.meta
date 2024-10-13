@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowMan_Idle-01_0: -257170172979271071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

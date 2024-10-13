@@ -36,8 +36,8 @@ public class PlayerMovement1 : MonoBehaviour
 
     void Update()
     {
-        if(!canMove)
-            return;
+        if (!canMove) return;
+       
         // Handle movement input
         movement.x = Input.GetAxisRaw("Horizontal"); // A/D or Left/Right arrows
         movement.y = Input.GetAxisRaw("Vertical");   // W/S or Up/Down arrows
@@ -58,6 +58,10 @@ public class PlayerMovement1 : MonoBehaviour
     void HandleMovement()
     {
         // Move the player
+        if (!SoundManager.instance.IsPlaying())
+        {
+            SoundManager.instance.PlaySound(SoundManager.instance.WomanWalking);
+        }
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
         // Set the facing direction based on movement
@@ -111,6 +115,8 @@ public class PlayerMovement1 : MonoBehaviour
     void SetIdleSprite()
     {
         // Set idle sprite based on facing direction
+        SoundManager.instance.StopSound();
+
         switch (facingDirection)
         {
             case Direction.Front:

@@ -9,8 +9,7 @@ public class DoorMoveTrigger : MonoBehaviour
     public string doorAnimationTrigger = "Open"; // Default to "Open" or customize for each trigger
 
     private bool isTriggered = false; // To prevent repeated triggering
-
-    // Called when the player enters the trigger area
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !isTriggered)

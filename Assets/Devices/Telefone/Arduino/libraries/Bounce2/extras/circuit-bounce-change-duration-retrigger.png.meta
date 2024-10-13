@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      circuit-bounce-change-duration-retrigger_0: 4905620513431634641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

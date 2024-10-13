@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowMan_Walk_1-01_0: -6426546091528961685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

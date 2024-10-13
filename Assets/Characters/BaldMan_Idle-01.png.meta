@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BaldMan_Idle-01_0: -4457959762990637108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

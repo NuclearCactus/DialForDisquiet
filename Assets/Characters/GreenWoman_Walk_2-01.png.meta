@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreenWoman_Walk_2-01_0: -7241302322933449629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

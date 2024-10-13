@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BaldMan_Desaturated-01_0: -646273204983042212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

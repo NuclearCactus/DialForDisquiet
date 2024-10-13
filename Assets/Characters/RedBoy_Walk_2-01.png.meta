@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedBoy_Walk_2-01_0: -2973680606789565847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

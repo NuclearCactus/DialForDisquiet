@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedBoy_Idle-01_0: -1699275469010455242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

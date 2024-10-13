@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreenWoman_Desaturated-01_0: -2777974323698351104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
