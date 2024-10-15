@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using UnityEditor.Build.Content;
 
 public class SoundManager : MonoBehaviour
 {
